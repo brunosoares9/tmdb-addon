@@ -36,7 +36,7 @@ COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/public ./public
 
 # Exposição da porta
-EXPOSE 1337
+EXPOSE 8080
 
 # Comando para iniciar o servidor
 ENTRYPOINT ["node", "addon/server.js"] 
